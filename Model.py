@@ -27,14 +27,14 @@ class MockModel(nn.Module):
 if __name__ == "__main__":
     n_blocks = 4
     n_heads = 3
-    embed_dim = 196
+    embed_dim = 192
     B = 1
     max_seq_len = 128
     N_c = 3000
     candidates = torch.rand(B,embed_dim, N_c) # user <-> candidates
     x = torch.rand(B, max_seq_len, embed_dim)
     inputs = (x, candidates)
-    model = MockModel(embed_dim, n_blocks, n_heads)
+    model = MockModel(embed_dim,n_heads, n_blocks)
     model.eval()
     #print(model(x,candidates).shape)
     torch.onnx.export(

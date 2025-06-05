@@ -1,1 +1,1 @@
-{"inputs": [{"name": "x", "type": "tensor(float)", "shape": [1, 128, 196]}, {"name": "candidates", "type": "tensor(float)", "shape": [1, 196, 3000]}], "outputs": [{"name": "logits", "type": "tensor(float)", "shape": [1, 3000, 1]}]}
+{"inputs": [{"name": "x", "type": "tensor(float)", "shape": [1, 128, 192]}, {"name": "candidates", "type": "tensor(float)", "shape": [1, 192, 3000]}], "outputs": [{"name": "logits", "type": "tensor(float)", "shape": [1, 3000, 1]}]}
