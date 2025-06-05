@@ -1,0 +1,6 @@
+rectools[torch]==0.14.0
+torch==2.6.0
+onnx==1.18.0
+onnxruntime==1.22.0
+openvino==2025.1.0
+onnxscript==0.2.5
